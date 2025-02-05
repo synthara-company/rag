@@ -1,0 +1,45 @@
+# Virtual Environment
+venv/
+*.venv
+env/
+.env
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Datasets (optional, depending on size)
+datasets/*.json
+
+# IDE and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Model and large binary files
+*.safetensors
+*.pt
+*.pth
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+*.env
+
+# Packaging and distribution
+dist/
+build/
+*.egg-info/
+
+# Miscellaneous
+.tmp/
+temp/
