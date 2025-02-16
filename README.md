@@ -81,3 +81,8 @@ python knowledge_graph_generator.py
 - Ensure all dependencies are installed
 - Check Python version compatibility
 - Verify API keys in .env file
+
+## Planned Improvements and Changes
+- Refactor `rag_pipeline.py` to improve readability and maintainability
+- Add comments in `rag_pipeline.py` and `knowledge_graph_generator.py` to indicate areas for potential improvements
+- Refactor `knowledge_graph_generator.py` to improve readability and maintainability
