@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Synthara Company"
+title: "Synthara RAG Transformer"
+version: 1.0.0
+date-released: 2024-04-04
+url: "https://github.com/synthara-company/rag"
+repository-code: "https://github.com/synthara-company/rag"
+license: MIT
+keywords:
+  - RAG
+  - Retrieval-Augmented Generation
+  - NLP
+  - AI
+  - Machine Learning
+  - Knowledge Graph
+abstract: >
+  An advanced Retrieval-Augmented Generation (RAG) system that combines 
+  sophisticated document retrieval with powerful language models to provide 
+  contextually rich, accurate responses across multiple knowledge domains.
