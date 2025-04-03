@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  rag-transformer:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ../datasets:/app/datasets
+      - ./.env:/app/.env
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - TMDB_API_KEY=${TMDB_API_KEY}
+      - NASA_API_KEY=${NASA_API_KEY}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
